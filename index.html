@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA - Artes Marciais Mistas | Educação Física</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .octagon-shape {
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+        
+        .slide-in {
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-blue-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-90 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="octagon-shape bg-red-600 w-10 h-10 flex items-center justify-center">
+                    <i class="fas fa-fist-raised text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold text-white">MMA - EDUCAÇÃO FÍSICA</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#intro" class="text-white hover:text-red-500 transition">Introdução</a>
+                <a href="#history" class="text-white hover:text-red-500 transition">História</a>
+                <a href="#techniques" class="text-white hover:text-red-500 transition">Técnicas</a>
+                <a href="#rules" class="text-white hover:text-red-500 transition">Regras</a>
+                <a href="#values" class="text-white hover:text-red-500 transition">Valores</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="intro" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3')] bg-cover bg-center"></div>
+        <div class="container mx-auto relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-in" style="color: #ffffff;">
+  <span class="text-red-500 glow">MMA</span> - Artes Marciais Mistas
+</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto slide-in" style="color: #ffffff; animation-delay: 0.2s;">
+  O esporte que combina disciplina, técnica e respeito
+</p>
+            <div class="flex justify-center space-x-4 slide-in" style="animation-delay: 0.4s;">
+                <a href="#history" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                    Explorar <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+                <a href="#values" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                    Valores <i class="fas fa-heart ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-history mr-3"></i> ORIGEM DO MMA
+                </h2>
+                <div class="w-24 h-1 bg-red-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border-l-4 border-red-500 transform transition hover:scale-[1.02]">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Nascimento do MMA Moderno</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-calendar-day text-white text-xs"></i>
+                            </div>
+                            <span><strong>Ano:</strong> 1993</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-map-marker-alt text-white text-xs"></i>
+                            </div>
+                            <span><strong>Local:</strong> Estados Unidos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-trophy text-white text-xs"></i>
+                            </div>
+                            <span><strong>Evento marcante:</strong> 1º evento do UFC (Ultimate Fighting Championship)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-globe-americas text-white text-xs"></i>
+                            </div>
+                            <span><strong>Inspiração:</strong> Vale-Tudo brasileiro (anos 80)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-lightbulb text-white text-xs"></i>
+                            </div>
+                            <span><strong>Ideia:</strong> Juntar várias lutas em uma só</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="relative">
+                    <div class="octagon-shape overflow-hidden bg-gray-800 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1517438322307-e67111335449?ixlib=rb-4.0.3" alt="Primeiro UFC" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg">
+                        <p class="font-bold">UFC 1 - 1993</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objective Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-bullseye mr-3"></i> OBJETIVO DO MMA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Derrotar o oponente de forma esportiva e controlada</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-xl text-center transform transition hover:scale-105 hover:shadow-xl hover:border-b-4 hover:border-red-500">
+                    <div class="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-rock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Nocaute (KO)</h3>
+                    <p class="text-gray-400">Quando um lutador é derrubado e não consegue continuar a luta após a contagem do árbitro.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl text-center transform transition hover:scale-105 hover:shadow-xl hover:border-b-4 hover:border-red-500">
+                    <div class="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Finalização</h3>
+                    <p class="text-gray-400">Quando um lutador aplica uma técnica de chave ou estrangulamento que faz o adversário desistir.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl text-center transform transition hover:scale-105 hover:shadow-xl hover:border-b-4 hover:border-red-500">
+                    <div class="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clipboard-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Decisão dos juízes</h3>
+                    <p class="text-gray-400">Quando a luta vai até o fim e os juízes decidem o vencedor baseado em critérios técnicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Martial Arts Section -->
+    <section id="techniques" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-chess-knight mr-3"></i> ARTES MARCIAIS NO MMA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">A fusão de técnicas que forma o atleta completo</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">    
+  <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-red-500 transform transition hover:scale-[1.02]">    
+    <div class="flex items-center mb-4">    
+      <div class="bg-red-500 p-2 rounded-lg mr-4">    
+        <i class="fas fa-fist-raised text-white text-xl"></i>    
+      </div>    
+      <h3 class="text-xl font-bold text-white">Boxe</h3>    
+    </div>    
+    <p class="text-gray-400">Socos precisos e esquivas rápidas. Desenvolve footwork e defesa.</p>    
+  </div>
+</div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-blue-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-shoe-prints text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Muay Thai</h3>
+                    </div>
+                    <p class="text-gray-400">Chutes, joelhos e cotovelos devastadores. A arte das 8 armas.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-purple-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-people-arrows text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Jiu-Jitsu</h3>
+                    </div>
+                    <p class="text-gray-400">Técnicas de chão e finalizações. O jogo de xadrez humano.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-yellow-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-walking text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Judô</h3>
+                    </div>
+                    <p class="text-gray-400">Quedas e projeções eficientes. Usa o peso do adversário contra ele.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-green-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-people-carry text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Wrestling</h3>
+                    </div>
+                    <p class="text-gray-400">Domínio físico e controle posicional. Base para o MMA moderno.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-orange-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Karate/Taekwondo</h3>
+                    </div>
+                    <p class="text-gray-400">Golpes retos e chutes rápidos. Velocidade e precisão.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-pink-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-music text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Capoeira</h3>
+                    </div>
+                    <p class="text-gray-400">Golpes giratórios imprevisíveis. Menos comum mas eficaz.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl border-t-4 border-indigo-500 transform transition hover:scale-[1.02]">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-random text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">MMA Moderno</h3>
+                    </div>
+                    <p class="text-gray-400">A fusão de todas essas artes em um esporte completo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-gavel mr-3"></i> REGRAS DO MMA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Estrutura que transforma a luta em esporte</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-white flex items-center">
+                        <div class="bg-red-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-check-circle text-white"></i>
+                        </div>
+                        Estrutura da Luta (UFC padrão)
+                    </h3>
+                    
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-clock text-white text-xs"></i>
+                            </div>
+                            <span><strong>Duração:</strong> 3 ou 5 rounds de 5 minutos cada</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-couch text-white text-xs"></i>
+                            </div>
+                            <span><strong>Intervalo:</strong> 1 minuto de descanso entre rounds</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-stop-circle text-white text-xs"></i>
+                            </div>
+                            <span><strong>Ringue:</strong> Octógono com área de 9 metros de diâmetro</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-weight text-white text-xs"></i>
+                            </div>
+                            <span><strong>Categorias:</strong> 8 divisões de peso masculino e 4 femininas</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold mt-10 mb-6 text-white flex items-center">
+                        <div class="bg-red-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-times-circle text-white"></i>
+                        </div>
+                        Movimentos Proibidos
+                    </h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-eye text-white"></i>
+                            </div>
+                            <span>Dedo no olho</span>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-skull text-white"></i>
+                            </div>
+                            <span>Golpes na nuca</span>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-male text-white"></i>
+                            </div>
+                            <span>Golpes nos testículos</span>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-cut text-white"></i>
+                            </div>
+                            <span>Puxar cabelo</span>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-teeth text-white"></i>
+                            </div>
+                            <span>Morder</span>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                            <div class="bg-red-500 p-2 rounded-lg mr-3">
+                                <i class="fas fa-ban text-white"></i>
+                            </div>
+                            <span>Chutar adversário caído</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gray-900 rounded-xl overflow-hidden h-full">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Octógono do UFC" class="w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-black bg-opacity-70 p-6 rounded-xl text-center max-w-md">
+                                <h3 class="text-2xl font-bold text-white mb-4">O Octógono</h3>
+                                <p class="text-gray-300">O ringue de 8 lados que se tornou ícone do MMA moderno, projetado para segurança dos atletas e melhor visibilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fight vs Violence Section -->
+    <section class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-balance-scale mr-3"></i> LUTA ≠ VIOLÊNCIA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">O contraste fundamental entre esporte e agressão</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 divide-x divide-gray-700">
+                    <div class="p-8 text-center border-b-4 border-green-500">
+                        <h3 class="text-2xl font-bold text-white mb-6">LUTA (MMA)</h3>
+                        <ul class="space-y-4 text-left text-gray-300">
+                            <li class="flex items-start">
+                                <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Tem regras claras e árbitros</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Praticado como esporte</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Exige treinamento e preparo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Ensina valores como respeito</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Promove saúde e disciplina</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-8 text-center border-b-4 border-red-500">
+                        <h3 class="text-2xl font-bold text-white mb-6">VIOLÊNCIA</h3>
+                        <ul class="space-y-4 text-left text-gray-300">
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-times text-white text-xs"></i>
+                                </div>
+                                <span>Sem regras ou controle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-times text-white text-xs"></i>
+                                </div>
+                                <span>Manifestação de agressão</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-times text-white text-xs"></i>
+                                </div>
+                                <span>Fruto de impulsividade</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-times text-white text-xs"></i>
+                                </div>
+                                <span>Gera medo e conflito</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-times text-white text-xs"></i>
+                                </div>
+                                <span>Prejudica a convivência</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-700 p-6 text-center">
+                    <h3 class="text-xl font-bold text-white mb-3">O verdadeiro lutador é aquele que controla sua agressividade</h3>
+                    <p class="text-gray-300">"O MMA me ensinou que a maior luta não é contra os outros, mas contra mim mesmo." - Bas Rutten, lenda do MMA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-heart mr-3"></i> O QUE O MMA ENSINA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Valores que vão muito além do octógono</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Disciplina</h3>
+                    </div>
+                    <p class="text-gray-400">Treinos rigorosos exigem comprometimento e rotina. O lutador aprende que sem disciplina não há evolução.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-balance-scale-right text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Autocontrole</h3>
+                    </div>
+                    <p class="text-gray-400">Saber controlar as emoções durante a luta é fundamental. Essa lição se estende para a vida pessoal.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-hands-helping text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Respeito</h3>
+                    </div>
+                    <p class="text-gray-400">Cumprimento ao adversário antes e depois da luta. O respeito é a base de qualquer arte marcial.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-chess text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Foco e Estratégia</h3>
+                    </div>
+                    <p class="text-gray-400">Cada luta é um jogo de xadrez físico. Desenvolve a capacidade de planejar e executar sob pressão.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-heartbeat text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Saúde Física</h3>
+                    </div>
+                    <p class="text-gray-400">Condicionamento cardiovascular, força, flexibilidade e alimentação balanceada são essenciais.</p>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-xl transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-medal text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Perseverança</h3>
+                    </div>
+                    <p class="text-gray-400">Aprender a cair e levantar, tanto no treino quanto na vida. A derrota é apenas um passo para a vitória.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MMA in School Section -->
+    <section class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-school mr-3"></i> MMA NA ESCOLA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Como as artes marciais podem contribuir para a educação</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="bg-gray-800 p-6 rounded-xl mb-6 border-l-4 border-red-500">
+                        <h3 class="text-xl font-bold text-white mb-3">Benefícios do MMA na Educação Física</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Ensina que luta esportiva é diferente de briga</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Trabalha corpo e mente de forma integrada</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Reduz agressividade através do controle emocional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Promove convivência respeitosa entre alunos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span>Contribui para formação de cidadãos melhores</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-white mb-3">Adaptação para o Ambiente Escolar</h3>
+                        <p class="text-gray-300 mb-4">Nas aulas de educação física, o MMA pode ser introduzido de forma lúdica e segura:</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <div class="bg-blue-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-shield-alt text-white text-xs"></i>
+                                </div>
+                                <span>Exercícios sem contato pleno (shadow boxing, drills)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-users text-white text-xs"></i>
+                                </div>
+                                <span>Trabalho em duplas com proteção adequada</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-gamepad text-white text-xs"></i>
+                                </div>
+                                <span>Jogos que simulam situações de luta sem risco</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-500 rounded-full p-1 mr-3 mt-1">
+                                    <i class="fas fa-book text-white text-xs"></i>
+                                </div>
+                                <span>Discussões sobre história e valores das artes marciais</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative h-full">
+                    <div class="bg-gray-800 rounded-xl overflow-hidden h-full min-h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-4.0.3" alt="Crianças praticando artes marciais" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4 text-center">
+                        <p class="text-white font-bold">"As artes marciais não são sobre violência, são sobre superação."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Influence Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-tv mr-3"></i> INFLUÊNCIA DA MÍDIA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Como o MMA é retratado e seus impactos</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-xl border-b-4 border-green-500">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <div class="bg-green-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-thumbs-up text-white"></i>
+                        </div>
+                        Impactos Positivos
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-chart-line text-white text-xs"></i>
+                            </div>
+                            <span><strong>Popularização do esporte:</strong> Tornou o MMA acessível a milhões de pessoas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-dollar-sign text-white text-xs"></i>
+                            </div>
+                            <span><strong>Profissionalização:</strong> Criou carreiras e oportunidades para atletas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-globe text-white text-xs"></i>
+                            </div>
+                            <span><strong>Globalização:</strong> Conectou culturas através do esporte</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-heart text-white text-xs"></i>
+                            </div>
+                            <span><strong>Inspiração:</strong> Mostra histórias de superação e dedicação</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-xl border-b-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                        <div class="bg-red-500 p-2 rounded-lg mr-4">
+                            <i class="fas fa-thumbs-down text-white"></i>
+                        </div>
+                        Impactos Negativos
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-exclamation-triangle text-white text-xs"></i>
+                            </div>
+                            <span><strong>Sensacionalismo:</strong> Foca apenas em violência e conflitos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-eye-slash text-white text-xs"></i>
+                            </div>
+                            <span><strong>Valores ocultos:</strong> Ignora os aspectos educacionais</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-mask text-white text-xs"></i>
+                            </div>
+                            <span><strong>Personagens:</strong> Cria estereótipos de lutadores</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-500 rounded-full p-1 mr-3 mt-1">
+                                <i class="fas fa-brain text-white text-xs"></i>
+                            </div>
+                            <span><strong>Má interpretação:</strong> Pode incentivar brigas sem preparo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-gray-700 mt-8 p-6 rounded-xl text-center max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-white mb-3">Consumo Crítico é Fundamental</h3>
+                <p class="text-gray-300">"A mídia mostra o sangue, mas não mostra o suor. Mostra o nocaute, mas não mostra os anos de treino. Como educadores, precisamos mostrar o que está por trás do esporte."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legends Section -->
+    <section class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-crown mr-3"></i> LENDAS DO MMA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Atletas que marcaram história no esporte</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div class="bg-gray-800 rounded-xl overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="relative pt-[100%]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgmmJrB1tKJx8rsoV4NUMfFfA6w9Lxep1F7oayQDYvwq0AOPQnBSAH0Y&s=10" alt="Anderson Silva" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Anderson Silva</h3>
+                        <p class="text-red-500 mb-2">Brasil</p>
+                        <p class="text-gray-400 text-sm">Maior campeão do peso médio. Defendeu o cinturão 10 vezes entre 2006-2013.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="relative pt-[100%]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mFDiF3pii-1yjScDlsqvVsA9yMPjJFkhvmomo0KhX3bMlbipC4dHVbI&s=10" alt="Amanda Nunes" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Amanda Nunes</h3>
+                        <p class="text-red-500 mb-2">Brasil</p>
+                        <p class="text-gray-400 text-sm">Maior lutadora da história. Bicampeã dos pesos galo e pena.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="relative pt-[100%]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAIliBbudy10Qebo4w8DX3mjNp5uOhRqotftd963yZJtKwuSLETQwBOoD&s=10" alt="José Aldo" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">José Aldo</h3>
+                        <p class="text-red-500 mb-2">Brasil</p>
+                        <p class="text-gray-400 text-sm">Rei do peso pena. Defendeu o título 7 vezes no WEC e UFC.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="relative pt-[100%]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgD4oJzniguazxmJi2czOjoCyuv71fb0YtRwX-ae4lhPh42fQqDhkAxfQ&s=10" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Khabib Nurmagomedov</h3>
+                        <p class="text-red-500 mb-2">Rússia</p>
+                        <p class="text-gray-400 text-sm">Aposentado invicto (29-0). Domínio absoluto no peso leve.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <div class="relative pt-[100%]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMLCHgrucnK7A3VuQEyVXWtFGmq0V8rJnqSY2oC3baRyXcUaz77NMClg&s=10" alt="Conor McGregor" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white">Conor McGregor</h3>
+                        <p class="text-red-500 mb-2">Irlanda</p>
+                        <p class="text-gray-400 text-sm">Maior astro do MMA. Bicampeão de categorias simultâneas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weight Classes Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-red-500">
+                    <i class="fas fa-weight-hanging mr-3"></i> CATEGORIAS DE PESO (UFC)
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Divisões que garantem igualdade competitiva</p>
+                <div class="w-24 h-1 bg-red-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-red-500">
+                    <h3 class="text-lg font-bold text-white">Peso Palha</h3>
+                    <p class="text-gray-400">Até 52 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="text-lg font-bold text-white">Peso Galo</h3>
+                    <p class="text-gray-400">Até 61 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-green-500">
+                    <h3 class="text-lg font-bold text-white">Peso Pena</h3>
+                    <p class="text-gray-400">Até 66 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-yellow-500">
+                    <h3 class="text-lg font-bold text-white">Peso Leve</h3>
+                    <p class="text-gray-400">Até 70 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-purple-500">
+                    <h3 class="text-lg font-bold text-white">Peso Meio-Médio</h3>
+                    <p class="text-gray-400">Até 77 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-pink-500">
+                    <h3 class="text-lg font-bold text-white">Peso Médio</h3>
+                    <p class="text-gray-400">Até 84 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-indigo-500">
+                    <h3 class="text-lg font-bold text-white">Peso Meio-Pesado</h3>
+                    <p class="text-gray-400">Até 93 kg</p>
+                </div>
+                <div class="bg-gray-900 p-4 rounded-lg border-l-4 border-orange-500">
+                    <h3 class="text-lg font-bold text-white">Peso Pesado</h3>
+                    <p class="text-gray-400">Até 120 kg</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-700 rounded-xl p-6 max-w-3xl mx-auto">
+                <h3 class="text-xl font-bold text-white mb-3 text-center">Por que divisões de peso?</h3>
+                <p class="text-gray-300 text-center">As categorias garantem que os lutadores competem em condições justas, com adversários de porte físico similar, valorizando a técnica em detrimento apenas do tamanho.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-gray-900 to-red-900">
+        <div class="container mx-auto text-center">
+            <div class="octagon-shape bg-red-600 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-trophy text-white text-4xl"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                MMA - Mais que um esporte, uma filosofia de vida
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Disciplina, respeito, superação e saúde física/mental são os verdadeiros valores das artes marciais mistas.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#intro" class="bg-white hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-bold transition transform hover:scale-105">
+                    <i class="fas fa-arrow-up mr-2"></i> Voltar ao Topo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div class="octagon-shape bg-red-600 w-10 h-10 flex items-center justify-center">
+                        <i class="fas fa-fist-raised text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">MMA - Educação Física</h3>
+                </div>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-gray-400 text-sm">
+                    <p>© 2025 MMA - Educação Física. Todos os direitos reservados.</p>
+                    <p>Apresentação para aula de Educação Física.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</html>
